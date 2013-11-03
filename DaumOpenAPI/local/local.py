@@ -1,0 +1,49 @@
+# -*- coding:utf-8 -*-
+
+
+from request import *
+
+
+'''
+Created on 2013. 11. 2.
+
+@author: seonghyunan
+'''
+
+class local(object):
+    
+    base_url = "http://apis.daum.net/local/geo"
+    apikey = None
+    
+    def __init__(self, apikey):
+        if apikey is None:
+            print "apikey is None."
+        else:
+            self.apikey = apikey
+            
+    
+    def addr2coord(self, q, pageno, output):
+        params={}
+        params['q'] = q
+        params['pageno'] = pageno
+        params['output'] = output
+        params['apikey'] = self.apikey
+         
+        return  request(self.base_url+"/addr2coord", params=params)
+        
+         
+    def coord2addr(self):
+        pass
+    
+    def transcoord(self):
+        pass
+
+    
+if __name__ == "__main__":
+    lc = local("48408559bb754dd16c517a5fd6d01e376a4be151")
+    print lc.addr2coord(u"대학로", 1,"json")
+    
+        
+     
+    
+        
