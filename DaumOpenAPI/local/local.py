@@ -46,14 +46,23 @@ class local(object):
         return  request(self.base_url+"/coord2addr", params=params)
          
     
-    def transcoord(self):
-        pass
+    def transcoord(self, y='',x='', fromCoord='',toCoord='', output='xml'):
+        params={}
+        params['x'] = x
+        params['y'] = y
+        params['fromCoord'] = fromCoord
+        params['toCoord'] = toCoord
+        params['output'] = output
+        params['apikey'] = self.apikey
+         
+        return  request(self.base_url+"/transcoord", params=params)
 
     
 if __name__ == "__main__":
     lc = local("48408559bb754dd16c517a5fd6d01e376a4be151")
-    #print lc.addr2coord(u"대학로", 1,"json")
+    print lc.addr2coord(u"대학로", 1,"json")
     print lc.coord2addr('37.507502379027','127.05590291409', 'WGS84','simple',"json")
+    print lc.transcoord('37.507502379027','127.05590291409', 'WGS84','TM',"json")
     
         
      
