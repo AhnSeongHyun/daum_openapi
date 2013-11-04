@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import sys
+sys.path.append("../common/")
 
 from request import *
 
@@ -22,7 +24,7 @@ class local(object):
             self.apikey = apikey
             
     
-    def addr2coord(self, q, pageno, output):
+    def addr2coord(self, q, pageno, output='xml'):
         params={}
         params['q'] = q
         params['pageno'] = pageno
@@ -32,8 +34,17 @@ class local(object):
         return  request(self.base_url+"/addr2coord", params=params)
         
          
-    def coord2addr(self):
-        pass
+    def coord2addr(self, latitude='', longitude='', inputCoordSystem='WGS84', format='fullname',output='xml'):
+        params={}
+        params['latitude'] = latitude
+        params['longitude'] = longitude
+        params['inputCoordSystem'] = inputCoordSystem
+        params['format'] = format
+        params['output'] = output
+        params['apikey'] = self.apikey
+         
+        return  request(self.base_url+"/coord2addr", params=params)
+         
     
     def transcoord(self):
         pass
@@ -41,7 +52,8 @@ class local(object):
     
 if __name__ == "__main__":
     lc = local("48408559bb754dd16c517a5fd6d01e376a4be151")
-    print lc.addr2coord(u"대학로", 1,"json")
+    #print lc.addr2coord(u"대학로", 1,"json")
+    print lc.coord2addr('37.507502379027','127.05590291409', 'WGS84','simple',"json")
     
         
      
