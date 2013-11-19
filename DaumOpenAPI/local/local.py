@@ -8,7 +8,6 @@ from request import *
 
 '''
 Created on 2013. 11. 2.
-
 @author: seonghyunan
 '''
 

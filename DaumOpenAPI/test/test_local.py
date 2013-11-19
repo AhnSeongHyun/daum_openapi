@@ -5,6 +5,7 @@ import unittest
 
 import sys
 sys.path.append("../local/")
+sys.path.append("../result/")
 
 from local import local
 
