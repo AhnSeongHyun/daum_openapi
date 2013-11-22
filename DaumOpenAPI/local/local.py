@@ -22,7 +22,8 @@ class local(object):
             self.apikey = apikey
             
     
-    def addr2coord(self, q, pageno, output='xml'):
+    def addr2coord(self, q, pageno, output='xml'): 
+        
         params={}
         params['q'] = q
         params['pageno'] = pageno
