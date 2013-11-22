@@ -1,5 +1,5 @@
 local 		: 48408559bb754dd16c517a5fd6d01e376a4be151
-socialpick : a4c8c716d0d6c2d652cede75a6c688dba9d0164c
+socialpick  : a4c8c716d0d6c2d652cede75a6c688dba9d0164c
 search		: 97a3f99c0d5a6b2fdd60e915668366f63939e1b6
-shopping : 043a78c6b4c1df8335e2fe33917ff5f616eff3f6
-contents  : b3e0456c1bf9facc191106ca35f9871141cb435a
+shopping    : 043a78c6b4c1df8335e2fe33917ff5f616eff3f6
+contents    : b3e0456c1bf9facc191106ca35f9871141cb435a
