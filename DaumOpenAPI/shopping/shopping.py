@@ -1,14 +1,14 @@
 # -*- coding:utf-8 -*-
-
+'''
+Created on 2013. 11. 2.
+@author: seonghyunan
+'''
 import sys
 sys.path.append("../common/")
 
 from request import *
 
-'''
-Created on 2013. 11. 2.
-@author: seonghyunan
-'''
+
 class shopping(object):
     
     base_url = "http://apis.daum.net/shopping/"

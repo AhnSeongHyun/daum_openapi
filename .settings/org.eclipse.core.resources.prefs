@@ -1,9 +1,8 @@
 eclipse.preferences.version=1
 encoding//DaumOpenAPI/common/request.py=utf-8
 encoding//DaumOpenAPI/contents/contents.py=utf-8
+encoding//DaumOpenAPI/json_object/json_object.py=utf-8
 encoding//DaumOpenAPI/local/local.py=utf-8
-encoding//DaumOpenAPI/result/result.py=utf-8
 encoding//DaumOpenAPI/search/search.py=utf-8
 encoding//DaumOpenAPI/shopping/shopping.py=utf-8
 encoding//DaumOpenAPI/socialpick/socialpick.py=utf-8
-encoding//DaumOpenAPI/test/test_local.py=utf-8

@@ -1,15 +1,13 @@
 # -*- coding:utf-8 -*-
-
+'''
+Created on 2013. 11. 2.
+@author: seonghyunan
+'''
 import sys
 sys.path.append("../common/")
 
 from request import *
 
-
-'''
-Created on 2013. 11. 2.
-@author: seonghyunan
-'''
 class search(object):
     
     base_url = "http://apis.daum.net/search"
@@ -115,6 +113,7 @@ class search(object):
 if __name__ == "__main__":
     sc = search('97a3f99c0d5a6b2fdd60e915668366f63939e1b6')
     obj =  sc.blog(u'아이유', 10, 1, 'date', 'xml');
-    
+    print obj
+    print obj.channel.lastBuildDate
     
      
