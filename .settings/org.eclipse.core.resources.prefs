@@ -6,3 +6,5 @@ encoding//DaumOpenAPI/local/local.py=utf-8
 encoding//DaumOpenAPI/search/search.py=utf-8
 encoding//DaumOpenAPI/shopping/shopping.py=utf-8
 encoding//DaumOpenAPI/socialpick/socialpick.py=utf-8
+encoding//DaumOpenAPI/test/test_local.py=utf-8
+encoding//DaumOpenAPI/test/test_socialpick.py=utf-8
