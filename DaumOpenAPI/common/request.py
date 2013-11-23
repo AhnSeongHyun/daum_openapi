@@ -19,7 +19,7 @@ def request(url, params):
         if r.status_code == 200:
             jsonStr = ""
             
-            if params['output'].upper() == 'XML':
+            if params['output'].upper() != 'JSON':
                 convertedJson = xmltodict.parse(r.text)
                 jsonStr = json.dumps(convertedJson) 
                 
