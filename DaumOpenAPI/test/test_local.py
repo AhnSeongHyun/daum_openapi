@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
-
-import random
+ 
 import unittest
 
 import sys
@@ -28,11 +27,16 @@ class TestLocalApiFunctions(unittest.TestCase):
         self.assertEqual(rc.channel.apierror.message, 'page_no:[0]:(Belowed minimum value)1');
         
     def test_coord2addr(self):
-        print self.lc.coord2addr('37.507502379027','127.05590291409', 'WGS84','simple',"json")
-        
+        {"name3":"삼성2동","code":"1123059","name1":"서울특별시","name2":"강남구"}
+        rc = self.lc.coord2addr('37.507502379027','127.05590291409', 'WGS84','simple',"json")
+        self.assertEqual(rc.code,u"1123059")
+        self.assertEqual(rc.name1,u"서울특별시")
+        self.assertEqual(rc.name3,u"삼성2동")
+    
     def test_transcoord(self):
         rc = self.lc.transcoord('37.507502379027','127.05590291409', 'WGS84','TM',"json")
-        print rc.__dict__.has_key('x')
+        self.assertEqual(rc.__dict__.has_key('x'), True)
+        self.assertEqual(rc.__dict__.has_key('y'), True)
         
           
 if __name__ == '__main__':
