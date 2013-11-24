@@ -71,7 +71,7 @@ class search(object):
         params['apikey'] = self.apikey
         return  request(self.base_url+"/cafe", params=params)
     
-    def video(self, q=None,  result=10, pageno=1, sort='accuracy', output='json'):
+    def vclip(self, q=None,  result=10, pageno=1, sort='accuracy', output='json'):
         params={}
         params['q'] = q
         params['result'] = result

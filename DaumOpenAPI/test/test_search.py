@@ -114,8 +114,72 @@ class TestSearchApiFunctions(unittest.TestCase):
         rc_xml = self.sc.book(q='naver', target="meta",cate_id=1, result=10, pageno=1, sort='date', output='json', searchType='all')
         self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
      
+    def test_book_meta_popular_title_json_xml(self):
+        rc_json = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='popular', output='json', searchType='title')
+        rc_xml = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='popular', output='json', searchType='title')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link) 
+   
+    def test_book_meta_accu_title_json_xml(self):
+        rc_json = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='accu', output='json', searchType='title')
+        rc_xml = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='accu', output='json', searchType='title')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)
+        
+    def test_book_meta_date_title_json_xml(self):
+        rc_json = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='date', output='json', searchType='title')
+        rc_xml = self.sc.book(q='python', target="meta",cate_id=33, result=10, pageno=1, sort='date', output='json', searchType='title')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
      
-     
+    def test_book_meta_popular_keyword_json_xml(self):
+        rc_json = self.sc.book(q='정치', target="meta", result=10, pageno=1, sort='popular', output='json', searchType='keyword')
+        rc_xml = self.sc.book(q='정치', target="meta", result=10, pageno=1, sort='popular', output='json', searchType='keyword')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link) 
+   
+    def test_book_meta_accu_keyword_json_xml(self):
+        rc_json = self.sc.book(q='정치', target="meta", result=10, pageno=1, sort='accu', output='json', searchType='keyword')
+        rc_xml = self.sc.book(q='정치', target="meta", result=10, pageno=1, sort='accu', output='json', searchType='keyword')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)
+        
+    def test_book_meta_date_keyword_json_xml(self):
+        rc_json = self.sc.book(q='정치', target="meta",result=10, pageno=1, sort='date', output='json', searchType='keyword')
+        rc_xml = self.sc.book(q='정치', target="meta", result=10, pageno=1, sort='date', output='json', searchType='keyword')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+        
+    #cafe
+    def test_cafe_date_json_xml(self):
+        rc_json = self.sc.cafe(q='정치', result=10, pageno=1, sort='date', output='json')
+        rc_xml = self.sc.cafe(q='정치', result=10, pageno=1, sort='date', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
+    
+    def test_cafe_accu_json_xml(self):
+        rc_json = self.sc.cafe(q='정치', result=10, pageno=1, sort='accu', output='json')
+        rc_xml = self.sc.cafe(q='정치', result=10, pageno=1, sort='accu', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
+    #board
+    def test_board_date_json_xml(self):
+        rc_json = self.sc.board(q='정치', result=10, pageno=1, sort='date', output='json')
+        rc_xml = self.sc.board(q='정치', result=10, pageno=1, sort='date', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
+    
+    def test_board_accu_json_xml(self):
+        rc_json = self.sc.board(q='정치', result=10, pageno=1, sort='accu', output='json')
+        rc_xml = self.sc.board(q='정치', result=10, pageno=1, sort='accu', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
+    #vclip
+    def test_vclip_recency_json_xml(self):
+        rc_json = self.sc.vclip(q='정치', result=10, pageno=1, sort='recency', output='json')
+        rc_xml = self.sc.vclip(q='정치', result=10, pageno=1, sort='recency', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
+    
+    def test_vclip_accuracy_json_xml(self):
+        rc_json = self.sc.vclip(q='정치', result=10, pageno=1, sort='accuracy', output='json')
+        rc_xml = self.sc.vclip(q='정치', result=10, pageno=1, sort='accuracy', output='xml')
+        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+    
         
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestSearchApiFunctions)

@@ -15,7 +15,7 @@ from json_object import *
 def request(url, params):
 
         r = requests.get(url, params=params)
-        print r.url
+        #print r.url
         if r.status_code == 200:
             jsonStr = ""
             
