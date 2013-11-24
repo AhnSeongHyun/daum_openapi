@@ -30,25 +30,25 @@ class search(object):
         params['apikey'] = self.apikey
         return  request(self.base_url+"/blog", params=params)
     
-    def board(self, q=None,  result=10, pageno=1, sort='accu', output='json'):
-        params={}
-        params['q'] = q
-        params['result'] = result
-        params['pageno']= pageno
-        params['sort'] = sort
-        params['output'] = output
-        params['apikey'] = self.apikey
-        return  request(self.base_url+"/board", params=params)
-    
-    
     def web(self, q=None,  result=10, pageno=1, output='xml'):
         params={}
         params['q'] = q
         params['result'] = result
         params['pageno']= pageno
+        params['output'] = output
+        params['apikey'] = self.apikey
+        return  request(self.base_url+"/web", params=params)
+    
+    def board(self, q=None,  result=10, pageno=1, sort='accu', output='json'):
+        params={}
+        params['q'] = q
+        params['result'] = result
+        params['pageno    ']= pageno
         params['sort'] = sort
         params['output'] = output
-        return  request(self.base_url+"/web", params=params)
+        params['apikey'] = self.apikey
+        return  request(self.base_url+"/board", params=params)
+    
     
     def image(self, q=None,  result=10, pageno=1, sort='accu', output='json'):
         params={}
@@ -97,6 +97,8 @@ class search(object):
         params={}
         params['q'] = q
         
+        params['target'] = target
+        
         if cate_id is not None:
             params['cate_id'] = cate_id;
              
@@ -105,6 +107,7 @@ class search(object):
         params['sort'] = sort
         params['range'] = range
         params['searchType'] = searchType
+        params['output'] = output
         params['apikey'] = self.apikey
         return  request(self.base_url+"/book", params=params)
     

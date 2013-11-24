@@ -9,4 +9,6 @@ encoding//socialpick/socialpick.py=utf-8
 encoding//test/test_contents.py=utf-8
 encoding//test/test_json_object.py=utf-8
 encoding//test/test_local.py=utf-8
+encoding//test/test_search.py=utf-8
 encoding//test/test_shopping.py=utf-8
+encoding//test/test_socialpick.py=utf-8
