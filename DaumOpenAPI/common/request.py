@@ -25,7 +25,7 @@ def request(url, params):
                 
             else:
                 jsonStr = r.text
-            
+                 
             json_obj = json.loads(jsonStr, object_hook= JsonObject)
             return json_obj
         else:

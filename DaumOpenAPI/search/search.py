@@ -111,12 +111,7 @@ class search(object):
         params['apikey'] = self.apikey
         return  request(self.base_url+"/book", params=params)
     
-    
 
-if __name__ == "__main__":
-    sc = search('97a3f99c0d5a6b2fdd60e915668366f63939e1b6')
-    obj =  sc.blog(u'아이유', 10, 1, 'date', 'xml');
-    print obj
-    print obj.channel.lastBuildDate
+
     
      
