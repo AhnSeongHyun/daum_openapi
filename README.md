@@ -36,22 +36,22 @@ result =  sc.blog(u'coldplay', 10, 1, 'date', 'xml');
 
 Provided data api category:
 - contents
-  - movie
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/movie">movie</a>
 - search
-  - blog
-  - cafe
-  - board
-  - web
-  - knowledge
-  - image
-  - vclip
-  - book
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/blog">blog</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/cafe">cafe</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/board">board</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/web">web</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/knowledge">knowledge</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/image">image</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/vclip">vclip</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/book">book</a>
 - socialpick
-  - search
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/socialpick_search">search</a>
 - shopping
-  - search
-  - detail 
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/shopping_search">search</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/shopping_detail">detail</a> 
 - local
-  - addr to coord
-  - coord to addr
-  - trans coord
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/addr2coord">addr to coord</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/coord2addr">coord to addr</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/transcoord">trans coord</a>
