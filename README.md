@@ -47,10 +47,10 @@ Provided data api category:
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/vclip">vclip</a>
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/book">book</a>
 - socialpick
-  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/socialpick_search">search</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/Socialpick-search">search</a>
 - shopping
-  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/shopping_search">search</a>
-  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/shopping_detail">detail</a> 
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/Shopping-search">search</a>
+  - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/Shopping-detail">detail</a> 
 - local
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/addr2coord">addr to coord</a>
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/coord2addr">coord to addr</a>
