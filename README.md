@@ -40,7 +40,7 @@ Provided data api category:
 - search
   - blog
   - cafe
-  - borad
+  - board
   - web
   - knowledge
   - image
