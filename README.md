@@ -4,7 +4,9 @@ daum_openapi
 Python library for Daum Open Data API. 
 
 Install
-   pip install daum_openapi
+```
+pip install daum_openapi
+```
 
 Features
 - JSON response keys to class member variables. 
