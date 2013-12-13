@@ -5,7 +5,7 @@ import unittest
 import sys
 sys.path.append("../json_object/")
 
-from json_object import *
+from daum_openapi.json_object import *
 
 class TestJsonObjectFunctions(unittest.TestCase):
 

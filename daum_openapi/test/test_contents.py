@@ -6,7 +6,7 @@ import sys
 sys.path.append("../contents/")
 sys.path.append("../json_object/")
 
-from contents import contents
+from daum_openapi.contents import contents
 
 class TestContentsApiFunctions(unittest.TestCase):
 

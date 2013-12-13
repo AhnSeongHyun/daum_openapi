@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='daum_openapi',
 
       version=version,
-      description="A module of parsing the open graph protocol and extracing the summary of webpage.",
+      description="Python Library of Daum Open Data API",
       long_description=open("README.md").read() + "\n",
       classifiers=[
       'Development Status :: 3 - Alpha',

@@ -7,7 +7,7 @@ import sys
 sys.path.append("../search/")
 sys.path.append("../result/")
 
-from search import search
+from daum_openapi.search import search
 
 class TestSearchApiFunctions(unittest.TestCase):
 

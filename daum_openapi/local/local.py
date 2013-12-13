@@ -8,7 +8,7 @@ Created on 2013. 11. 2.
 import sys
 sys.path.append("../common/")
 
-from request import *
+from daum_openapi.common import *
 
 class local(object):
     

@@ -10,7 +10,7 @@ sys.path.append("../json_object/")
 
 import requests
 import json, xmltodict 
-from json_object import *
+from daum_openapi.json_object import *
  
 def request(url, params):
 

@@ -6,7 +6,7 @@ import sys
 sys.path.append("../local/")
 sys.path.append("../json_object/")
 
-from local import local
+from daum_openapi.local import local
 
 class TestLocalApiFunctions(unittest.TestCase):
 

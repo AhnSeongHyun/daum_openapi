@@ -6,7 +6,7 @@ import sys
 sys.path.append("../shopping/")
 sys.path.append("../json_object/")
 
-from shopping import shopping
+from daum_openapi.shopping import shopping
 
 class TestShoppingApiFunctions(unittest.TestCase):
 

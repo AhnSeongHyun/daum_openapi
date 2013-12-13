@@ -7,7 +7,7 @@ import sys
 sys.path.append("../socialpick/")
 sys.path.append("../result/")
 
-from socialpick import socialpick
+from daum_openapi.socialpick import socialpick
 
 class TestSocialPickFunctions(unittest.TestCase):
 
