@@ -1,1 +1,1 @@
-from contents import *
+from json_object import *

@@ -1,1 +1,1 @@
-from contents import *
+from local import *

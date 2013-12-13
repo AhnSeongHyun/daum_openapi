@@ -1,1 +1,1 @@
-from contents import *
+from search import *
