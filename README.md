@@ -3,13 +3,15 @@ daum_openapi
 
 Python library for Daum Open Data API. 
 
-
+Install
+   pip install daum_openapi
 
 Features
 - JSON response keys to class member variables. 
 - Convert XML response to JSON and then keys to class member variables. 
 
 ```
+from daum_openapi.search import search
 sc = search(API_KEY)
 result =  sc.blog(u'coldplay', 10, 1, 'date', 'xml');
       
