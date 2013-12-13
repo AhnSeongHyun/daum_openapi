@@ -2,14 +2,12 @@ daum_openapi
 ----
 
 Python library for Daum Open Data API. 
-<br/>
-<br/>
+<br/> 
 <h4>Install</h4>
 ```
 pip install daum_openapi
 ```
-<br/>
-<br/>
+<br/> 
 <h4>Features</h4>
 - JSON response keys to class member variables. 
 - Convert XML response to JSON and then keys to class member variables. 
@@ -39,8 +37,7 @@ result =  sc.blog(u'coldplay', 10, 1, 'date', 'xml');
 => result.channel.item[0].title        //"Coldplay - viva la vida"
 => result.channel.item[1].description  //"Yellow lyrics"
 ```
-<br/>
-<br/>
+<br/> 
 <h4>Provided data api category:</h4>
 - contents
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/movie">movie</a>
@@ -64,7 +61,7 @@ result =  sc.blog(u'coldplay', 10, 1, 'date', 'xml');
   - <a href="https://github.com/AhnSeongHyun/daum_openapi/wiki/transcoord">trans coord</a>
 
 
-<h4>License</h4><br/>
+<h4>License</h4> 
 
 Released under the MIT license.
 
