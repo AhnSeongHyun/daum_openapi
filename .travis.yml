@@ -9,12 +9,4 @@ install:
   - python setup.py install
 
 script:
-  - python daum_openapi/test/test_contents
-  - python daum_openapi/test/test_json_object
-  - python daum_openapi/test/test_local
-  - python daum_openapi/test/test_search
-  - python daum_openapi/test/test_shopping
-  - python daum_openapi/test/test_socialpick
-
-
-
+  - trial daum_openapi
