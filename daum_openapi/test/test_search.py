@@ -166,7 +166,7 @@ class TestSearchApiFunctions(unittest.TestCase):
     def test_board_accu_json_xml(self):
         rc_json = self.sc.board(q='정치', result=10, pageno=1, sort='accu', output='json')
         rc_xml = self.sc.board(q='정치', result=10, pageno=1, sort='accu', output='xml')
-        self.assertEqual(rc_json.channel.item[0].link, rc_xml.channel.item[0].link)  
+        self.assertEqual(rc_json.channel.result, rc_xml.channel.result)  
     
     #vclip
     def test_vclip_recency_json_xml(self):
