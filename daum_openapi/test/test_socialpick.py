@@ -17,7 +17,6 @@ class TestSocialPickFunctions(unittest.TestCase):
 
     def test_category_c(self):
         rc = self.sp.search(5,'c', 'json')
-
         if vars(rc).has_key('message'):
             pass
         else:
@@ -37,9 +36,7 @@ class TestSocialPickFunctions(unittest.TestCase):
             self.assertEqual(int(rc.socialpick.item[3].rank), 4); 
     
     def test_category_e(self):
-
         rc = self.sp.search(5,'e', 'json')
-        print vars(rc)
         if vars(rc).has_key('message'):
             pass
         else:

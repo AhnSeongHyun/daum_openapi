@@ -16,20 +16,17 @@ class TestContentsApiFunctions(unittest.TestCase):
         print "setup"
 
     def test_contents_movie_json(self):
-        rc = self.ct.movie(u"공범", 10, 1,"json")
-        print "test_contents_movie_json"
+        rc = self.ct.movie(u"공범", 10, 1,"json") 
         self.assertEqual(rc.channel.q, u'공범')
         
         
     def test_contents_movie_xml(self):
-        rc = self.ct.movie(u"공범", 10, 1,"xml")
-        print "test_contents_movie_xml"
+        rc = self.ct.movie(u"공범", 10, 1,"xml") 
         self.assertEqual(rc.channel.q, u'공범')
         
         
     def test_contents_movie_pagecount_zero(self):
-        rc = self.ct.movie(u"공범", 10, 0,"xml")
-        print "test_contents_movie_pagecount_zero"
+        rc = self.ct.movie(u"공범", 10, 0,"xml") 
         self.assertEqual(rc.apierror.dcode, u'111')
         
 
