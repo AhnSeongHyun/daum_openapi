@@ -1,5 +1,8 @@
 daum_openapi
 ----
+<br/>
+[![Build Status](https://travis-ci.org/AhnSeongHyun/daum_openapi.png)](https://travis-ci.org/AhnSeongHyun/daum_openapi)
+<br/>
 
 Python library for Daum Open Data API. 
 <br/> 
