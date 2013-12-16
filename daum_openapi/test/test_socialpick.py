@@ -18,7 +18,7 @@ class TestSocialPickFunctions(unittest.TestCase):
     def test_category_c(self):
         rc = self.sp.search(5,'c', 'json')
 
-        if vars(rc).has_key('apierror'):
+        if vars(rc).has_key('message'):
             pass
         else:
             self.assertEqual(int(rc.socialpick.item[0].rank), 1);
@@ -28,7 +28,7 @@ class TestSocialPickFunctions(unittest.TestCase):
     
     def test_category_s(self):
         rc = self.sp.search(5,'s', 'json')
-        if vars(rc).has_key('apierror'):
+        if vars(rc).has_key('message'):
             pass
         else:
             self.assertEqual(int(rc.socialpick.item[0].rank), 1);
@@ -39,7 +39,8 @@ class TestSocialPickFunctions(unittest.TestCase):
     def test_category_e(self):
 
         rc = self.sp.search(5,'e', 'json')
-        if vars(rc).has_key('apierror'):
+        print vars(rc)
+        if vars(rc).has_key('message'):
             pass
         else:
             self.assertEqual(int(rc.socialpick.item[0].rank), 1);
