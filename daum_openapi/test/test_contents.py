@@ -14,16 +14,6 @@ class TestContentsApiFunctions(unittest.TestCase):
     def setUp(self):
         self.ct = contents("b3e0456c1bf9facc191106ca35f9871141cb435a")
         print "setup"
-
-    def test_contents_movie_json(self):
-        rc = self.ct.movie(u"love", 10, 1,"json") 
-        self.assertEqual(rc.channel.q, u'love')
-        
-        
-    def test_contents_movie_xml(self):
-        rc = self.ct.movie(u"love", 10, 1,"xml") 
-        self.assertEqual(rc.channel.q, u'love')
-        
         
     def test_contents_movie_pagecount_zero(self):
         rc = self.ct.movie(u"love", 10, 0,"xml") 
