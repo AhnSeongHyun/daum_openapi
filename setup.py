@@ -7,7 +7,7 @@ setup(name='daum_openapi',
 
       version=version,
       description="Python Library of Daum Open Data API",
-      long_description=open("README.md").read() + "\n",
+      long_description=open("pip_desc.txt").read() + "\n",
       classifiers=[
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
